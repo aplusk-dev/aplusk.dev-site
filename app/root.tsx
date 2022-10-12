@@ -11,6 +11,9 @@ import {
 } from "@remix-run/react";
 
 import globalStylesUrl from './styles/global.css'
+import cssResetUrl from './styles/reset.css'
+import fontsUrl from './styles/font.css'
+
 import favIconUrl from '../public/favicon.ico';
 
 export const meta: MetaFunction = () => ({
@@ -20,6 +23,8 @@ export const meta: MetaFunction = () => ({
 });
 
 export const links = () => [
+  { rel: 'stylesheet', href: fontsUrl },
+  { rel: 'stylesheet', href: cssResetUrl },
   { rel: 'stylesheet', href: globalStylesUrl },
   { rel: 'icon', href: favIconUrl }
 ]
