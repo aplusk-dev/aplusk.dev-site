@@ -1,12 +1,3 @@
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --background-color: #fff;
   --text-color: #121416d8;
@@ -29,4 +20,6 @@ html[data-theme='dark'] {
   color-scheme: dark;
 }
 
-
+html {
+  font-family: "OpenSans";
+}
